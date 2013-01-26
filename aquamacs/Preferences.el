@@ -10,3 +10,11 @@
 (global-set-key [M-up] 'windmove-up)              ; move to upper window
 (global-set-key [M-down] 'windmove-down)          ; move to downer window
 
+;; Load Gallina python mode (install it in ~/Library/Application
+;; Support/Aquamacs Emacs)
+(load-library "~/Library/Application Support/Aquamacs Emacs/python.el")
+(require 'python)
+(add-hook 'python-mode-hook
+          #'(lambda ()
+              (define-key python-mode-map "\C-m" 'newline-and-indent)))
+
