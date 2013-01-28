@@ -41,3 +41,5 @@ export PATH=/usr/local/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=~/bin:$PATH
 
 ulimit -n 2048
+
+unsetopt correct_all
