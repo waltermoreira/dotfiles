@@ -1,0 +1,9 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"draw_indent_guides": false,
+	"line_numbers": false
+}

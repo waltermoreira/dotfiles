@@ -1,0 +1,11 @@
+{
+	"installed_packages":
+	[
+		"Git",
+		"GotoOpenFile",
+		"Package Control",
+		"Python Imports Sorter",
+		"sublemacspro",
+		"SublimeCodeIntel"
+	]
+}
