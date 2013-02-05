@@ -18,3 +18,6 @@
           #'(lambda ()
               (define-key python-mode-map "\C-m" 'newline-and-indent)))
 
+
+(require 'elixir-mode)
+
