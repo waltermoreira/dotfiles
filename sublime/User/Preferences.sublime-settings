@@ -1,13 +1,15 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"draw_indent_guides": false,
+	"draw_minimap_border": false,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"draw_indent_guides": false,
 	"line_numbers": false,
-	"draw_minimap_border": false,
+	"margin": 0,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
-	"margin": 0
+	"scroll_past_end": true,
+	"translate_tabs_to_spaces": true
 }

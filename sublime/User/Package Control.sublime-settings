@@ -1,11 +1,14 @@
 {
 	"installed_packages":
 	[
+		"EasyMotion",
 		"Git",
 		"GotoOpenFile",
+		"Origami",
 		"Package Control",
 		"Python Imports Sorter",
 		"sublemacspro",
-		"SublimeCodeIntel"
+		"SublimeCodeIntel",
+		"SublimeREPL"
 	]
 }
