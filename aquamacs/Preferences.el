@@ -47,3 +47,6 @@
 (package-initialize)
 
 (load-theme 'solarized-dark)
+
+(require 'yasnippet)
+(yas/load-directory "~/Library/Application Support/Aquamacs Emacs/elpa/yasnippet-0.8.0/snippets/")
