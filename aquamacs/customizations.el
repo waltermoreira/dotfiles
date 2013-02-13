@@ -18,6 +18,7 @@
  '(rst-level-face-base-color "grey")
  '(rst-level-face-base-light 10)
  '(rst-level-face-step-light 7)
+ '(same-window-buffer-names (quote ("*shell*" "*mail*" "*inferior-lisp*" "*ielm*" "*scheme*" "*Help*")))
  '(scroll-bar-mode nil)
  '(tabbar-mode nil nil (tabbar))
  '(visual-line-mode nil t))
