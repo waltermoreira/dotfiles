@@ -39,3 +39,11 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/Library/Application Support/Aquamacs Emacs//ac-dict")
 (ac-config-default)
+
+(require 'package)
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+(load-theme 'solarized-dark)
