@@ -27,4 +27,15 @@
 (autoload 'pymacs-autoload "pymacs")
 (eval-after-load "pymacs"
   '(add-to-list 'pymacs-load-path "~/dotfiles/aquamacs/pymacs"))
+(pymacs-load "ropemacs" "rope-")
+(setq ropemacs-enable-autoimport t)
 
+(require 'auto-complete)
+(global-auto-complete-mode t)
+
+(require 'ido)
+(ido-mode t)
+
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/Library/Application Support/Aquamacs Emacs//ac-dict")
+(ac-config-default)
