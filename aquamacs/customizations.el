@@ -24,4 +24,6 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(default ((default nil) (nil (:height 150))))
- '(echo-area ((default nil) (nil (:height 150)))))
+ '(echo-area ((default nil) (nil (:height 150))))
+ '(mode-line ((default nil) (nil (:height 140 :family "Ubuntu_Mono"))))
+ '(mode-line-inactive ((default nil) (nil (:height 140 :family "Ubuntu_Mono")))))
