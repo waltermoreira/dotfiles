@@ -16,6 +16,7 @@
  '(ns-tool-bar-display-mode (quote both) t)
  '(ns-tool-bar-size-mode (quote regular) t)
  '(one-buffer-one-frame-mode nil nil (aquamacs-frame-setup))
+ '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(python-shell-interpreter "ipython")
  '(rst-level-face-base-color "grey")
  '(rst-level-face-base-light 10)
