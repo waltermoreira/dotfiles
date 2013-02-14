@@ -4,13 +4,21 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes (quote ("501caa208affa1145ccbb4b74b6cd66c3091e41c5bb66c677feda9def5eab19c" default)))
- '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/")))))
+ '(desktop-save-mode t)
+ '(fringe-mode (quote (0)) nil (fringe))
+ '(global-hl-line-mode t)
+ '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
+ '(scroll-bar-mode nil)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 140 :foundry "apple" :family "Ubuntu_Mono")))))
+ '(default ((t (:height 140 :foundry "apple" :family "Ubuntu_Mono"))))
+ '(mode-line ((t (:background "#073642" :foreground "#839496" :inverse-video t :box (:line-width 3 :color "#839496")))))
+ '(mode-line-buffer-id ((t (:foreground "#839496" :weight bold))))
+ '(mode-line-inactive ((t (:inherit mode-line :background "#073642" :foreground "#839496" :inverse-video nil :box (:line-width 3 :color "#073642") :weight light)))))
 
 (add-to-list 'load-path "~/.emacs.d/local_packages")
 
@@ -44,12 +52,11 @@
 ;; (require 'auto-complete)
 ;; (global-auto-complete-mode t)
 
-;; (require 'ido)
-;; (ido-mode t)
+(require 'ido)
+(ido-mode t)
 
-;; (require 'auto-complete-config)
-;; (add-to-list 'ac-dictionary-directories "~/Library/Application Support/Aquamacs Emacs//ac-dict")
-;; (ac-config-default)
+(require 'auto-complete-config)
+(ac-config-default)
 
 (load-theme 'solarized-dark)
 
