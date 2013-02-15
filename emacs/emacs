@@ -7,7 +7,7 @@
  '(custom-safe-themes (quote ("30fe7e72186c728bd7c3e1b8d67bc10b846119c45a0f35c972ed427c45bacc19" "5e1d1564b6a2435a2054aa345e81c89539a72c4cad8536cfe02583e0b7d5e2fa" "72cc9ae08503b8e977801c6d6ec17043b55313cda34bcf0e6921f2f04cf2da56" "71efabb175ea1cf5c9768f10dad62bb2606f41d110152f4ace675325d28df8bd" "501caa208affa1145ccbb4b74b6cd66c3091e41c5bb66c677feda9def5eab19c" default)))
  '(desktop-save-mode t)
  '(fci-rule-column 80)
- '(fringe-mode (quote (0)) nil (fringe))
+ '(fringe-mode (quote (4 . 4)) nil (fringe))
  '(global-hl-line-mode t)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
  '(scroll-bar-mode nil)
@@ -63,7 +63,10 @@
 
 (load-theme 'solarized-dark)
 
-;; (require 'yasnippet)
-;; (yas/load-directory "~/Library/Application Support/Aquamacs Emacs/elpa/yasnippet-0.8.0/snippets/")
+(require 'yasnippet)
+(yas-global-mode 1)
 
 (require 'fill-column-indicator)
+
+(set-frame-parameter nil 'internal-border-width 0)
+
