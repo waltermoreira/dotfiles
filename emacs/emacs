@@ -10,6 +10,7 @@
  '(fci-rule-column 80)
  '(fringe-mode (quote (4 . 4)) nil (fringe))
  '(global-hl-line-mode t)
+ '(ispell-program-name "/usr/local/bin/ispell")
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 1)
