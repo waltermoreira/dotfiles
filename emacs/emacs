@@ -81,3 +81,5 @@
 ;; Disable highligting current line in ansi-term
 (make-variable-buffer-local 'global-hl-line-mode)
 (add-hook 'term-mode-hook (lambda () (setq global-hl-line-mode nil)))
+
+(electric-pair-mode +1)
