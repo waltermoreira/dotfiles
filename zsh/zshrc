@@ -44,3 +44,5 @@ export PATH=~/bin:$PATH
 ulimit -n 2048
 
 unsetopt correct_all
+
+[[ $TERM == eterm-color ]] && export TERM=xterm
