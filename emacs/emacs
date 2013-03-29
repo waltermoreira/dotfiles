@@ -85,7 +85,9 @@
 	    (setq global-hl-line-mode nil)
 	    (local-set-key "\C-v" 'scroll-up-command)
 	    (yas-minor-mode -1)))
-
+(defadvice ansi-term (after advise-ansi-term-coding-system)
+    (set-buffer-process-coding-system 'utf-8-unix 'utf-8-unix))
+(ad-activate 'ansi-term)
 
 (electric-pair-mode +1)
 
