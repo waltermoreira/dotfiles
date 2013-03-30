@@ -78,6 +78,8 @@
 
 (require 'magit)
 
+;; Configuring ansi-term
+
 ;; Disable highligting current line in ansi-term
 (make-variable-buffer-local 'global-hl-line-mode)
 (add-hook 'term-mode-hook 
@@ -88,6 +90,12 @@
 (defadvice ansi-term (after advise-ansi-term-coding-system)
     (set-buffer-process-coding-system 'utf-8-unix 'utf-8-unix))
 (ad-activate 'ansi-term)
+
+(defun zsh ()
+  "Start ansi-term with zsh."
+  (interactive)
+  (ansi-term "/usr/local/bin/zsh"))
+(global-set-key (kbd "C-c t") 'zsh)
 
 (electric-pair-mode +1)
 
