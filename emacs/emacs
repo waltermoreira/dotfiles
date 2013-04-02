@@ -94,3 +94,8 @@
          (buffer-substring (region-beginning) (region-end))
        (read-string "Google: "))))))
 (global-set-key (kbd "C-c g") 'google)
+
+;; Enable matching parenthesis highlighting
+(require 'paren)
+(setq show-paren-style 'parenthesis)
+(show-paren-mode +1)
