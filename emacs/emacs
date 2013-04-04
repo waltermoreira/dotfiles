@@ -114,3 +114,6 @@
 (require 'paren)
 (setq show-paren-style 'parenthesis)
 (show-paren-mode +1)
+
+(require 'misc)
+(global-set-key (kbd "M-z") 'zap-up-to-char)
