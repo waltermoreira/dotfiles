@@ -118,3 +118,6 @@
 (require 'misc)
 (global-set-key (kbd "M-z") 'zap-up-to-char)
 (put 'upcase-region 'disabled nil)
+
+;; I hate tabs!
+(setq-default indent-tabs-mode nil)
