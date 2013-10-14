@@ -47,3 +47,9 @@ ulimit -n 2048
 unsetopt correct_all
 
 [[ $TERM == eterm-color ]] && export TERM=xterm
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
