@@ -53,3 +53,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
+# gitignore.io
+function gi() { curl http://www.gitignore.io/api/$@ ;}
