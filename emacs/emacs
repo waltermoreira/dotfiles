@@ -125,3 +125,5 @@
 ; Turn on auto-fill in all text modes
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
+; No beeps or flashes
+(setq ring-bell-function 'ignore)
