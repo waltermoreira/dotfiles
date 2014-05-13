@@ -41,6 +41,9 @@
 (add-hook 'python-mode-hook
           #'(lambda ()
               (define-key python-mode-map "\C-m" 'newline-and-indent)))
+(add-hook 'python-mode-hook
+          #'(lambda ()
+              (add-hook 'before-save-hook 'delete-trailing-whitespace)))
 
 ;; (require 'pymacs)
 ;; (autoload 'pymacs-apply "pymacs")
