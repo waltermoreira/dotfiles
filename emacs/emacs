@@ -85,8 +85,8 @@
 
 ;; Disable highligting current line in ansi-term
 (make-variable-buffer-local 'global-hl-line-mode)
-(add-hook 'term-mode-hook 
-	  (lambda () 
+(add-hook 'term-mode-hook
+	  (lambda ()
 	    (setq global-hl-line-mode nil)
 	    (local-set-key "\C-v" 'scroll-up-command)
 	    (yas-minor-mode -1)))
@@ -130,3 +130,5 @@
 
 ; No beeps or flashes
 (setq ring-bell-function 'ignore)
+
+(server-start)
