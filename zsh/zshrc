@@ -57,3 +57,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 function gi() { curl http://www.gitignore.io/api/$@ ;}
 
 export PATH=~/Library/Haskell/bin:$PATH
+
+export DOCKER_HOST=tcp://localhost:4444
