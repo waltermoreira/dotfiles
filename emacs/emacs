@@ -133,3 +133,8 @@
 (setq ring-bell-function 'ignore)
 
 (server-start)
+
+(require 'uniquify)
+(setq
+ uniquify-buffer-name-style 'post-forward
+ uniquify-separator ":")
