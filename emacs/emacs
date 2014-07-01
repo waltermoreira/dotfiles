@@ -102,8 +102,6 @@
   (ansi-term "/usr/local/bin/zsh"))
 (global-set-key (kbd "C-c t") 'zsh)
 
-(electric-pair-mode +1)
-
 (defun google ()
   "Google the selected region if any, display a query prompt otherwise."
   (interactive)
