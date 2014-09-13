@@ -137,3 +137,5 @@
 (setq
  uniquify-buffer-name-style 'post-forward
  uniquify-separator ":")
+
+(setq backup-inhibited t)
