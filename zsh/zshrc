@@ -56,6 +56,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 # gitignore.io
 function gi() { curl http://www.gitignore.io/api/$@ ;}
 
-export PATH=~/Library/Haskell/bin:$PATH
+export PATH=/usr/local/texlive/2014/bin/x86_64-darwin:~/Library/Haskell/bin:$PATH
 
-export DOCKER_HOST=tcp://localhost:4444
+export DOCKER_HOST=tcp://192.168.59.103:2375
