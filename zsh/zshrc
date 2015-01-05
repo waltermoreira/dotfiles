@@ -58,4 +58,11 @@ function gi() { curl http://www.gitignore.io/api/$@ ;}
 
 export PATH=/usr/local/texlive/2014/bin/x86_64-darwin:~/Library/Haskell/bin:$PATH
 
-export DOCKER_HOST=tcp://192.168.59.103:2375
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_TLS_VERIFY=1
+export DOCKER_CERT_PATH=/Users/wmoreira/.boot2docker/certs/boot2docker-vm
+
+function acurl()
+{
+    curl -k -H "Authorization: Bearer $TOKEN" https://api.araport.org/community/v0.3$@
+}
