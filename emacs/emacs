@@ -129,6 +129,12 @@
 (add-hook 'focus-out-hook 'save-all)
 
 (elpy-enable)
+(add-hook 'elpy-mode-hook
+          (lambda ()
+            (define-key elpy-mode-map [M-left] nil)
+            (define-key elpy-mode-map [M-right] nil)
+            (define-key elpy-mode-map [M-up] nil)
+            (define-key elpy-mode-map [M-down] nil)))
 
 (global-set-key [M-left] 'windmove-left)          ; move to left windnow
 (global-set-key [M-right] 'windmove-right)        ; move to right window
