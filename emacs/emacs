@@ -36,34 +36,6 @@
 (global-set-key [M-up] 'windmove-up)              ; move to upper window
 (global-set-key [M-down] 'windmove-down)          ; move to downer window
 
-;; Load Gallina python mode (install it in ~/Library/Application
-;; Support/Aquamacs Emacs)
-(load-library "~/.emacs.d/local_packages/python.el")
-(require 'python)
-(add-hook 'python-mode-hook
-          #'(lambda ()
-              (define-key python-mode-map "\C-m" 'newline-and-indent)))
-(add-hook 'python-mode-hook
-          #'(lambda ()
-              (add-hook 'before-save-hook 'delete-trailing-whitespace)))
-
-;; (setq pymacs-python-command "/usr/local/bin/python")
-;; (require 'pymacs)
-;; (autoload 'pymacs-apply "pymacs")
-;; (autoload 'pymacs-call "pymacs")
-;; (autoload 'pymacs-eval "pymacs" nil t)
-;; (autoload 'pymacs-exec "pymacs" nil t)
-;; (autoload 'pymacs-load "pymacs" nil t)
-;; (pymacs-load "ropemacs" "rope-")
-;; (autoload 'pymacs-autoload "pymacs")
-;; (eval-after-load "pymacs"
-;;   '(add-to-list 'pymacs-load-path "~/dotfiles/aquamacs/pymacs"))
-;; (pymacs-load "ropemacs" "rope-")
-;; (setq ropemacs-enable-autoimport t)
-
-;; (require 'auto-complete)
-;; (global-auto-complete-mode t)
-
 (require 'ido)
 (ido-mode t)
 
@@ -85,35 +57,35 @@
 
 (require 'magit)
 
-;; Configuring ansi-term
+;; ;; Configuring ansi-term
 
-;; Disable highligting current line in ansi-term
-(make-variable-buffer-local 'global-hl-line-mode)
-(add-hook 'term-mode-hook
-	  (lambda ()
-	    (setq global-hl-line-mode nil)
-	    (local-set-key "\C-v" 'scroll-up-command)
-	    (yas-minor-mode -1)))
-(defadvice ansi-term (after advise-ansi-term-coding-system)
-    (set-buffer-process-coding-system 'utf-8-unix 'utf-8-unix))
-(ad-activate 'ansi-term)
+;; ;; Disable highligting current line in ansi-term
+;; (make-variable-buffer-local 'global-hl-line-mode)
+;; (add-hook 'term-mode-hook
+;; 	  (lambda ()
+;; 	    (setq global-hl-line-mode nil)
+;; 	    (local-set-key "\C-v" 'scroll-up-command)
+;; 	    (yas-minor-mode -1)))
+;; (defadvice ansi-term (after advise-ansi-term-coding-system)
+;;     (set-buffer-process-coding-system 'utf-8-unix 'utf-8-unix))
+;; (ad-activate 'ansi-term)
 
-(defun zsh ()
-  "Start ansi-term with zsh."
-  (interactive)
-  (ansi-term "/usr/local/bin/zsh"))
-(global-set-key (kbd "C-c t") 'zsh)
+;; (defun zsh ()
+;;   "Start ansi-term with zsh."
+;;   (interactive)
+;;   (ansi-term "/usr/local/bin/zsh"))
+;; (global-set-key (kbd "C-c t") 'zsh)
 
-(defun google ()
-  "Google the selected region if any, display a query prompt otherwise."
-  (interactive)
-  (browse-url
-   (concat
-    "http://www.google.com/search?ie=utf-8&oe=utf-8&q="
-    (url-hexify-string (if mark-active
-         (buffer-substring (region-beginning) (region-end))
-       (read-string "Google: "))))))
-(global-set-key (kbd "C-c g") 'google)
+;; (defun google ()
+;;   "Google the selected region if any, display a query prompt otherwise."
+;;   (interactive)
+;;   (browse-url
+;;    (concat
+;;     "http://www.google.com/search?ie=utf-8&oe=utf-8&q="
+;;     (url-hexify-string (if mark-active
+;;          (buffer-substring (region-beginning) (region-end))
+;;        (read-string "Google: "))))))
+;; (global-set-key (kbd "C-c g") 'google)
 
 ;; Enable matching parenthesis highlighting
 (require 'paren)
