@@ -65,4 +65,4 @@ function acurl()
     curl -k -H "Authorization: Bearer $TOKEN" https://api.araport.org/community/v0.3$@
 }
 
-export GOPAHT=~/gocode
+alias clean_containers="docker ps -aq|xargs docker rm -f"
