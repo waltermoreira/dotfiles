@@ -143,3 +143,10 @@
 
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+(require 'helm-config)
+(helm-mode 1)
+
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+;;(helm-projectile-on)
