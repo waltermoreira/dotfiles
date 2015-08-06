@@ -134,7 +134,8 @@
             (define-key elpy-mode-map [M-left] nil)
             (define-key elpy-mode-map [M-right] nil)
             (define-key elpy-mode-map [M-up] nil)
-            (define-key elpy-mode-map [M-down] nil)))
+            (define-key elpy-mode-map [M-down] nil)
+            (fci-mode 1)))
 
 (global-set-key [M-left] 'windmove-left)          ; move to left windnow
 (global-set-key [M-right] 'windmove-right)        ; move to right window
@@ -149,4 +150,5 @@
 
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
-;;(helm-projectile-on)
+
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
