@@ -120,7 +120,7 @@
  uniquify-buffer-name-style 'post-forward
  uniquify-separator ":")
 
-(setq backup-inhibited nil)
+(setq backup-inhibited t)
 
 (defun save-all ()
     (interactive)
