@@ -26,7 +26,7 @@
      ("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(package-selected-packages
    (quote
-    (yaml-mode web-mode solarized-theme projectile magit helm fill-column-indicator elpy elm-mode color-theme-solarized auto-complete)))
+    (org yaml-mode web-mode solarized-theme projectile magit helm fill-column-indicator elpy elm-mode color-theme-solarized auto-complete)))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 1)
  '(tool-bar-mode nil)
