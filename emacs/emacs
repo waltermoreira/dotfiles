@@ -19,6 +19,15 @@
  '(global-hl-line-mode t)
  '(ispell-program-name "/usr/local/bin/ispell")
  '(magit-use-overlays nil)
+ '(org-agenda-files (quote ("~/org")))
+ '(org-catch-invisible-edits (quote show))
+ '(org-enforce-todo-dependencies t)
+ '(org-log-done (quote note))
+ '(org-mobile-files (quote (org-agenda-files "~/org")))
+ '(org-modules
+   (quote
+    (org-bbdb org-bibtex org-docview org-gnus org-habit org-info org-irc org-mhe org-rmail org-w3m)))
+ '(org-startup-indented t)
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
@@ -41,8 +50,8 @@
  '(default ((t (:height 140 :foundry "apple" :family "Ubuntu Mono"))))
  '(custom-face-tag ((t (:foreground "#6c71c4" :weight normal :height 1.2))))
  '(custom-group-tag ((t (:foreground "#268bd2"))))
- '(mode-line-buffer-id ((t (:foreground "#073642" :weight bold))))
  '(mode-line ((t (:background "#b58900" :foreground "#073642" :inverse-video nil :box (:line-width 3 :color "#b58900") :overline nil :underline nil))))
+ '(mode-line-buffer-id ((t (:foreground "#073642" :weight bold))))
  '(mode-line-inactive ((t (:inherit mode-line :background "#839496" :foreground "#073642" :inverse-video nil :box (:line-width 3 :color "#839496") :overline nil :underline nil :weight light))))
  '(variable-pitch ((t (:height 140 :foundry "apple" :family "Ubuntu")))))
 
@@ -160,3 +169,7 @@
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; org-mobile
+(setq org-mobile-inbox-for-pull "~/org/flagged.org")
+(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
