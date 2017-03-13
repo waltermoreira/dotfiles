@@ -173,3 +173,23 @@
 ;; org-mobile
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+(global-set-key (kbd "C-c a") 'org-agenda)
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (local-unset-key (kbd "<M-right>"))
+            (local-unset-key (kbd "<M-left>"))
+            (local-unset-key (kbd "<M-up>"))
+            (local-unset-key (kbd "<M-down>"))
+            (define-key org-mode-map (kbd "<s-right>") 'org-metaright)
+            (define-key org-mode-map (kbd "<s-left>") 'org-metaleft)
+            (define-key org-mode-map (kbd "<s-up>") 'org-metaup)
+            (define-key org-mode-map (kbd "<s-down>") 'org-metadown)))
+
+(add-hook 'org-agenda-mode-hook
+          (lambda ()
+            (local-unset-key (kbd "<M-up>"))
+            (local-unset-key (kbd "<M-down>"))
+            (define-key org-agenda-mode-map (kbd "<s-up>") 'org-agenda-drag-line-backward)
+            (define-key org-agenda-mode-map (kbd "<s-down>") 'org-agenda-drag-line-forward)))
+
